@@ -1,0 +1,752 @@
+* {
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+li {
+    list-style: none;
+    width: 100px;
+    text-align: center;
+    height: 100%;
+    padding: 1rem 1.5rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header and navbar */
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    background-color: black;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* hamburger styles */
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 50%;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* .nav-item {
+    margin-left: 5rem;
+} */
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #E2E8F0;
+    width: 100%;
+    display: block;
+}
+
+.nav-item:hover{
+    background-color: rgb(227, 75, 125);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-logo {
+    flex: 50%;
+}
+
+.nav-logo .src{
+    height: 100%;
+    width: 15%;
+}
+
+#navmenuS,#navmenuD{
+    justify-content: flex-end;
+}
+
+
+/* HOME SECTION SLIDER SLIDESHOW */
+
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 30px 0px;
+    flex-direction: column;
+    /* background-color: #e6a50e; */
+    background-color: #000;
+}
+
+.home .slider{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.home .slider .slide-container{
+    width:98%;
+    height:100%;
+    object-fit: contain;
+       /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+.home .slider .slide-container img{
+    width:100%;
+    height:100%;
+    transition: 0.5s ease; /* Smooth transition effect */
+}
+
+
+/* ABOUT SECTION */
+.about{
+    background-color: #000;
+    padding: 30px 0px;
+    height: 100vh;
+}
+
+.about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+.about .content .leftwrap{
+    overflow: hidden; 
+    flex: 60%;
+}
+.about .content .leftwrap .left{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.about .content .leftwrap .left .title{
+    font-family: "Times New Roman", Times, serif;
+    /* font-weight: 50; */
+    font-size: 50px;
+    text-align: center;
+    padding: 5px 0px;
+    /* text-decoration: underline; */
+}
+
+.about .content .leftwrap .left .abouttext .point{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+}
+
+.about .content .leftwrap .left .abouttext .descs{
+    font-size: 15px;
+
+}
+
+.about .content .leftwrap .left{
+    height: 100%;
+    
+    /* animation properties */
+    /* -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 25s linear infinite;
+    -webkit-animation: my-animation 25s linear infinite;
+    animation: my-animation 25s linear infinite; */
+  }
+  
+  /* for Firefox */
+  /* @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  } */
+  
+  /* for Chrome */
+  /* @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  } */
+
+.about .content .right{
+    flex: 40%;
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.about .content .right .image{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../IMAGES/Leonardo_Diffusion_XL_3_to_5_Colorful_vibrant_mocktails_Placed_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+/* #aboutimg{
+    height: 100%;
+    width: 100%;
+} */
+
+/* Menu Section */
+.menu{
+    background-color: #000;
+    padding: 30px 0px;
+    height: 100vh;
+}
+
+.menu .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+.menu .container .menutext{
+    display: flex;
+    flex: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px
+}
+.menu .container .menutext span{
+    font-size: 50px;
+    font-stretch: expanded;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu .container .menutext .aboutmenu{
+    font-size: 15px;
+}
+
+
+.menu .container .menuitems{
+    flex: 75%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.menu .container .menuitems .mocktails{
+    flex: 40%;
+    width: 100%;
+    margin: 10px;
+    overflow: hidden;
+    /* position: relative; */
+}
+.menu .container .menuitems .mocktails a{
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+}
+.menu .container .menuitems .mocktails a .mocktails_bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMAGES/Leonardo_Diffusion_XL_Colorful_mocktails_mojitos_and_shakes_pl_0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .container .menuitems .mocktails a .mocktails_bg span{
+    color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    display: block;
+    /* padding: 30px; */
+    transition: all 1s;
+}
+
+.menu .container .menuitems .mocktails a .mocktails_bg:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.menu .container .menuitems .mocktails a .mocktails_bg:hover span{
+    transform: scale(0.8);
+    color: rgb(227, 75, 125);
+}
+
+
+
+
+.menu .container .menuitems .softies{
+    flex: 40%;
+    width: 100%;
+    margin: 10px;
+    overflow: hidden;
+    /* position: relative; */
+}
+.menu .container .menuitems .softies a {
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+}
+
+.menu .container .menuitems .softies a .softies_bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../IMAGES/PhotoReal_image_of_chocolate_vanilla_and_chocovanilla_mix_soft_0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .container .menuitems .softies  a .softies_bg span{
+    color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    display: block;
+    /* padding: 30px; */
+    transition: all 1s;
+}
+
+
+.menu .container .menuitems .softies a .softies_bg:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.menu .container .menuitems .softies a .softies_bg:hover span{
+    transform: scale(0.8);
+    color: rgb(227, 75, 125);
+}
+
+/* Contact Section */
+
+.contact{
+    background-color: #000;
+    padding: 30px 0px;
+    height: 100vh;
+}
+
+.contact .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../IMAGES/bartender-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 0px 10px;
+}
+
+.contact .container .contact_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex: 35%;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-size: 50px;
+    padding: 0px 10px;
+    height: 100%;
+    line-height: 2;
+
+}
+
+
+.contact .container .contact_details .socials{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.contact .container .contact_details .socials .handles{
+    margin: 5px;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+
+#insta,#facebook,#email,#call,#location{
+    filter: grayscale();
+    transition: .3s ease-in-out;
+    height: 100%;
+}
+
+#insta:hover,#facebook:hover,#email:hover,#call:hover,#location:hover{
+    filter: none;
+    transform: scale(1.2);
+}
+
+/* MENU PAGE style */
+.Menulist{
+    background-color: #000;
+    padding: 30px 0px;
+}
+
+.Menulist .container{
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    height: 100%;
+    padding: 0px 10px;
+}
+.Menulist .container .moctail_menu {
+    width:100%;
+    height: 100%;
+    padding: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../IMAGES/Leonardo_Diffusion_XL_Image_of_a_blue_color_mocktail_glass_wit_3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  /* position: relative; */
+}
+.Menulist .container .moctail_menu .title{
+    font-family: "Times New Roman", Times, serif;
+    /* font-weight: 50; */
+    font-size: 50px;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+
+ .Menulist .container .moctail_menu .item_list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    /* position: relative; */
+  }
+.Menulist .container .moctail_menu .item_list .item {
+    width: 100%;
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+
+.Menulist .container .moctail_menu .item_list .item span {
+    float: right;
+}
+
+.Menulist .container .moctail_menu .item_list .item em {
+    float: left;
+}
+
+.Menulist .container .moctail_menu .item_list .desc{
+    border-bottom: 1px dotted white;
+    font-size: 12px;
+}
+
+
+.Menulist .container .moctail_menu ul li span {
+      position: relative;
+      float: right;
+      top: .2em;
+      padding: 1px 0 1px 5px;
+    }
+.Menulist .container .moctail_menu ul li em{
+      position: relative;
+      float: left;
+      font-style: normal;
+      top: .2em;
+      padding: 0 5px 0 0;
+    }
+
+
+h1 {
+  margin-top: 0;
+}
+
+/* HAMBURGER STYLE */
+.hamburger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 5%;
+    left:90%
+}
+
+.hamburger .line{
+    background-color: #fff;
+    width: 30px;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+/* 
+@media only screen and (max-width:900px) {
+
+    .navlist li a{
+        padding: 10px 30px;
+        
+    }
+    .navlist{
+        width: 85%;
+    }
+    .navbar .logo{
+        width: 15%; 
+        /* height: 100%;
+        padding: 5px; */
+  /* }
+
+   .menu .container .menutext span{
+    font-size: 50px;
+    font-stretch: expanded;
+   }
+   .menu .container .menuitems .mocktails .mocktails_bg a{
+    font-size: 40px;
+        
+}
+
+
+} */
+
+/* TABLETS */
+
+@media only screen and (max-width:768px) {
+/* HOME PAGE STYLE */
+    
+    /* NAVBAR Section  */
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #0000004e;
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+        background-color: #000000b6;
+        color: #fff;
+        font-size: large;
+
+    }
+
+    .nav-item {
+        Padding: 2rem 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        top: 25%;
+    }
+
+    
+   .home .slider .slide-container{
+        height:auto ;
+   }
+
+    /* ABOUT Section */
+
+   .about{
+    height: auto;
+    padding: 70px 0px;
+   }
+   .about .content .right{
+    display: none;
+    }
+    .about .content{
+        padding:20px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../IMAGES/Leonardo_Diffusion_XL_3_to_5_Colorful_vibrant_mocktails_Placed_2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    /* MENU Section */
+
+    .menu .container .menutext span{
+        font-size: 40px;
+    }
+    .menu .container .menutext .aboutmenu{
+        font-size: 12px;
+    }
+
+
+    .menu .container .menuitems .softies  a .softies_bg span{
+        font-size: 30px;
+    }
+    .menu .container .menuitems .mocktails a .mocktails_bg span{
+        font-size: 30px
+    }
+
+    /* CONTACT Section  */
+
+
+    .contact .container .contact_details{
+        font-size: 30px;
+    }
+    .contact .container .contact_details .socials .handles{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/* MENU PAGE */
+
+    .Menulist .container .moctail_menu .title {
+        font-size: 40px;
+    }
+}   
+
+
+/* MOBILE PHONE LARGE */
+
+@media only screen and (max-width:426px) {
+
+/* navbar style  */
+    .nav-menu {
+        top: 2rem;
+    }
+    .bar{
+    width: 20px;
+    height: 2px;
+    margin: 3px auto;
+    }
+
+    /* ABOUT SECTION */
+    .about{
+        height: 100vh;
+        padding: 25px 0px
+    }
+
+    .about .content .leftwrap{
+        height: 100%;
+    }
+
+    .about .content .leftwrap .left{
+    justify-content: space-evenly
+    }
+
+
+    .about .content .leftwrap .left .title {
+        font-size: 25px;
+        padding: 2px 0px;
+    }
+    .about .content .leftwrap .left .abouttext .point {
+        font-size: larger;
+        font-weight: 800;
+    }
+    .about .content .leftwrap .left .abouttext .descs{
+        font-size: 12px;
+    }
+
+    /* MENU SECTION  */
+    .menu .container .menutext{
+        justify-content: space-evenly;
+    }
+
+    .menu .container .menutext .section_heading{
+        font-size: 25px ;
+    }
+    .menu .container .menuitems {
+        flex-direction: column;
+    }
+    .menu .container .menuitems .mocktails a .mocktails_bg span{
+        font-size: 20px;
+    }
+    .menu .container .menuitems .softies a .softies_bg span {
+        font-size: 20px;
+    }
+    /* Contact Section  */
+
+
+    .contact .container .contact_details{
+        font-size: 20px;
+    }
+
+/* MENU PAGE */
+    
+    .Menulist .container .moctail_menu {
+        padding: 25px
+    }
+    .Menulist .container .moctail_menu .title {
+        font-size: 25px;
+    }
+    .Menulist .container .moctail_menu .item_list .item {
+        font-size: 12px;
+        padding: 10px 0px;
+    }
+    .Menulist .container .moctail_menu .item_list .desc {
+        border-bottom: 1px dotted white;
+        font-size: 11px
+    }
+ 
+}
