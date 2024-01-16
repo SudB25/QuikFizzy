@@ -55,7 +55,7 @@ function slider(){
     else{
         Start=1;
     }
-    img.innerHTML = "<img src=../IMAGES/"+slides[Start-1]+">";
+    img.innerHTML = "<img src= IMAGES/"+slides[Start-1]+">";
    
 }
 setInterval(slider,3000);
