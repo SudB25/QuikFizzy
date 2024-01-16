@@ -30,6 +30,7 @@ a {
     border-bottom: 1px solid #E2E8F0;
     background-color: black;
     position: fixed;
+    z-index: 1000;
 }
 
 .navbar {
